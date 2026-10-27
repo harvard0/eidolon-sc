@@ -1,0 +1,660 @@
+[
+  {
+    "method": "GET",
+    "path": "/api/auth/providers",
+    "file": "backend/src/eidolon/account_api.py",
+    "line": 261,
+    "handler": "sign_in_providers"
+  },
+  {
+    "method": "GET",
+    "path": "/api/auth/{provider}/start",
+    "file": "backend/src/eidolon/account_api.py",
+    "line": 272,
+    "handler": "start_sign_in"
+  },
+  {
+    "method": "GET",
+    "path": "/api/auth/{provider}/callback",
+    "file": "backend/src/eidolon/account_api.py",
+    "line": 300,
+    "handler": "finish_sign_in"
+  },
+  {
+    "method": "POST",
+    "path": "/api/auth/logout",
+    "file": "backend/src/eidolon/account_api.py",
+    "line": 349,
+    "handler": "logout"
+  },
+  {
+    "method": "GET",
+    "path": "/api/account",
+    "file": "backend/src/eidolon/account_api.py",
+    "line": 356,
+    "handler": "account"
+  },
+  {
+    "method": "PUT",
+    "path": "/api/account/reach-outs",
+    "file": "backend/src/eidolon/account_api.py",
+    "line": 381,
+    "handler": "switch_reach_outs"
+  },
+  {
+    "method": "DELETE",
+    "path": "/api/account/sign-in-methods/{provider}",
+    "file": "backend/src/eidolon/account_api.py",
+    "line": 390,
+    "handler": "unlink"
+  },
+  {
+    "method": "POST",
+    "path": "/api/account/logout-everywhere",
+    "file": "backend/src/eidolon/account_api.py",
+    "line": 400,
+    "handler": "logout_everywhere"
+  },
+  {
+    "method": "POST",
+    "path": "/api/account/delete",
+    "file": "backend/src/eidolon/account_api.py",
+    "line": 406,
+    "handler": "delete_account"
+  },
+  {
+    "method": "GET",
+    "path": "/api/account/keys/exemption",
+    "file": "backend/src/eidolon/account_api.py",
+    "line": 421,
+    "handler": "exemption"
+  },
+  {
+    "method": "POST",
+    "path": "/api/account/keys/llm/check",
+    "file": "backend/src/eidolon/account_api.py",
+    "line": 433,
+    "handler": "check_own_llm"
+  },
+  {
+    "method": "POST",
+    "path": "/api/account/keys/memory-llm/check",
+    "file": "backend/src/eidolon/account_api.py",
+    "line": 444,
+    "handler": "check_own_memory_llm"
+  },
+  {
+    "method": "GET",
+    "path": "/api/account/keys/llm/efforts",
+    "file": "backend/src/eidolon/account_api.py",
+    "line": 454,
+    "handler": "llm_efforts"
+  },
+  {
+    "method": "POST",
+    "path": "/api/account/keys/llm/models",
+    "file": "backend/src/eidolon/account_api.py",
+    "line": 476,
+    "handler": "list_own_llm_models"
+  },
+  {
+    "method": "GET",
+    "path": "/api/account/keys/llm/providers",
+    "file": "backend/src/eidolon/account_api.py",
+    "line": 491,
+    "handler": "llm_providers"
+  },
+  {
+    "method": "GET",
+    "path": "/api/account/keys/llm/providers/{provider}/models",
+    "file": "backend/src/eidolon/account_api.py",
+    "line": 507,
+    "handler": "llm_provider_models"
+  },
+  {
+    "method": "POST",
+    "path": "/api/account/keys/tts/check",
+    "file": "backend/src/eidolon/account_api.py",
+    "line": 519,
+    "handler": "check_own_tts"
+  },
+  {
+    "method": "POST",
+    "path": "/api/account/keys/stt/check",
+    "file": "backend/src/eidolon/account_api.py",
+    "line": 527,
+    "handler": "check_own_stt"
+  },
+  {
+    "method": "POST",
+    "path": "/api/account/keys/image/check",
+    "file": "backend/src/eidolon/account_api.py",
+    "line": 537,
+    "handler": "check_own_image"
+  },
+  {
+    "method": "POST",
+    "path": "/api/account/consent",
+    "file": "backend/src/eidolon/account_api.py",
+    "line": 551,
+    "handler": "consent"
+  },
+  {
+    "method": "POST",
+    "path": "/api/auth/dev-login",
+    "file": "backend/src/eidolon/account_api.py",
+    "line": 558,
+    "handler": "dev_login"
+  },
+  {
+    "method": "GET",
+    "path": "/api/admin",
+    "file": "backend/src/eidolon/admin_api.py",
+    "line": 39,
+    "handler": "admin"
+  },
+  {
+    "method": "GET",
+    "path": "/api/admin/backups",
+    "file": "backend/src/eidolon/admin_backup_api.py",
+    "line": 16,
+    "handler": "backup_status"
+  },
+  {
+    "method": "POST",
+    "path": "/api/admin/backups",
+    "file": "backend/src/eidolon/admin_backup_api.py",
+    "line": 22,
+    "handler": "back_up_now"
+  },
+  {
+    "method": "GET",
+    "path": "/api/admin/config",
+    "file": "backend/src/eidolon/admin_config_api.py",
+    "line": 256,
+    "handler": "get_config"
+  },
+  {
+    "method": "PUT",
+    "path": "/api/admin/config/{item}",
+    "file": "backend/src/eidolon/admin_config_api.py",
+    "line": 260,
+    "handler": "save"
+  },
+  {
+    "method": "POST",
+    "path": "/api/admin/config/{item}/models",
+    "file": "backend/src/eidolon/admin_config_api.py",
+    "line": 280,
+    "handler": "list_models"
+  },
+  {
+    "method": "DELETE",
+    "path": "/api/admin/config/{item}",
+    "file": "backend/src/eidolon/admin_config_api.py",
+    "line": 294,
+    "handler": "restore"
+  },
+  {
+    "method": "GET",
+    "path": "/api/admin/prices",
+    "file": "backend/src/eidolon/admin_prices_api.py",
+    "line": 62,
+    "handler": "get_prices"
+  },
+  {
+    "method": "PUT",
+    "path": "/api/admin/prices",
+    "file": "backend/src/eidolon/admin_prices_api.py",
+    "line": 66,
+    "handler": "save_price"
+  },
+  {
+    "method": "POST",
+    "path": "/api/admin/prices/refresh",
+    "file": "backend/src/eidolon/admin_prices_api.py",
+    "line": 73,
+    "handler": "refresh_catalog"
+  },
+  {
+    "method": "DELETE",
+    "path": "/api/admin/prices",
+    "file": "backend/src/eidolon/admin_prices_api.py",
+    "line": 79,
+    "handler": "restore_price"
+  },
+  {
+    "method": "GET",
+    "path": "/api/admin/users",
+    "file": "backend/src/eidolon/admin_users_api.py",
+    "line": 151,
+    "handler": "list_users"
+  },
+  {
+    "method": "GET",
+    "path": "/api/admin/users/{user_id}",
+    "file": "backend/src/eidolon/admin_users_api.py",
+    "line": 167,
+    "handler": "user_details"
+  },
+  {
+    "method": "POST",
+    "path": "/api/admin/users/{user_id}/ban",
+    "file": "backend/src/eidolon/admin_users_api.py",
+    "line": 172,
+    "handler": "ban"
+  },
+  {
+    "method": "DELETE",
+    "path": "/api/admin/users/{user_id}",
+    "file": "backend/src/eidolon/admin_users_api.py",
+    "line": 181,
+    "handler": "delete_user"
+  },
+  {
+    "method": "DELETE",
+    "path": "/api/admin/users/{user_id}/ban",
+    "file": "backend/src/eidolon/admin_users_api.py",
+    "line": 188,
+    "handler": "unban"
+  },
+  {
+    "method": "PUT",
+    "path": "/api/admin/users/{user_id}/limits",
+    "file": "backend/src/eidolon/admin_users_api.py",
+    "line": 195,
+    "handler": "set_limits"
+  },
+  {
+    "method": "DELETE",
+    "path": "/api/admin/users/{user_id}/limits",
+    "file": "backend/src/eidolon/admin_users_api.py",
+    "line": 206,
+    "handler": "take_off_limits"
+  },
+  {
+    "method": "GET",
+    "path": "/api/admin/announcements",
+    "file": "backend/src/eidolon/announcements_api.py",
+    "line": 44,
+    "handler": "list_announcements"
+  },
+  {
+    "method": "POST",
+    "path": "/api/admin/announcements",
+    "file": "backend/src/eidolon/announcements_api.py",
+    "line": 49,
+    "handler": "write"
+  },
+  {
+    "method": "GET",
+    "path": "/api/admin/announcements/{id}",
+    "file": "backend/src/eidolon/announcements_api.py",
+    "line": 54,
+    "handler": "announcement"
+  },
+  {
+    "method": "PUT",
+    "path": "/api/admin/announcements/{id}",
+    "file": "backend/src/eidolon/announcements_api.py",
+    "line": 58,
+    "handler": "edit"
+  },
+  {
+    "method": "POST",
+    "path": "/api/admin/announcements/{id}/publish",
+    "file": "backend/src/eidolon/announcements_api.py",
+    "line": 64,
+    "handler": "publish"
+  },
+  {
+    "method": "DELETE",
+    "path": "/api/admin/announcements/{id}/publish",
+    "file": "backend/src/eidolon/announcements_api.py",
+    "line": 69,
+    "handler": "withdraw"
+  },
+  {
+    "method": "POST",
+    "path": "/api/admin/announcements/{id}/pin",
+    "file": "backend/src/eidolon/announcements_api.py",
+    "line": 74,
+    "handler": "pin"
+  },
+  {
+    "method": "DELETE",
+    "path": "/api/admin/announcements/{id}/pin",
+    "file": "backend/src/eidolon/announcements_api.py",
+    "line": 82,
+    "handler": "unpin"
+  },
+  {
+    "method": "DELETE",
+    "path": "/api/admin/announcements/{id}",
+    "file": "backend/src/eidolon/announcements_api.py",
+    "line": 87,
+    "handler": "delete"
+  },
+  {
+    "method": "GET",
+    "path": "/api/announcements",
+    "file": "backend/src/eidolon/announcements_api.py",
+    "line": 91,
+    "handler": "published"
+  },
+  {
+    "method": "GET",
+    "path": "/api/health",
+    "file": "backend/src/eidolon/app.py",
+    "line": 383,
+    "handler": "health"
+  },
+  {
+    "method": "GET",
+    "path": "/api/ice-servers",
+    "file": "backend/src/eidolon/app.py",
+    "line": 411,
+    "handler": "ice_servers"
+  },
+  {
+    "method": "POST",
+    "path": "/api/offer",
+    "file": "backend/src/eidolon/app.py",
+    "line": 425,
+    "handler": "offer"
+  },
+  {
+    "method": "PATCH",
+    "path": "/api/offer",
+    "file": "backend/src/eidolon/app.py",
+    "line": 448,
+    "handler": "ice_candidates"
+  },
+  {
+    "method": "GET",
+    "path": "/api/profile",
+    "file": "backend/src/eidolon/app.py",
+    "line": 456,
+    "handler": "get_profile"
+  },
+  {
+    "method": "PUT",
+    "path": "/api/profile",
+    "file": "backend/src/eidolon/app.py",
+    "line": 460,
+    "handler": "update_profile"
+  },
+  {
+    "method": "GET",
+    "path": "/api/characters",
+    "file": "backend/src/eidolon/app.py",
+    "line": 467,
+    "handler": "list_characters"
+  },
+  {
+    "method": "GET",
+    "path": "/api/landing",
+    "file": "backend/src/eidolon/app.py",
+    "line": 496,
+    "handler": "landing"
+  },
+  {
+    "method": "GET",
+    "path": "/api/characters/{character_id}/avatar",
+    "file": "backend/src/eidolon/app.py",
+    "line": 505,
+    "handler": "character_avatar"
+  },
+  {
+    "method": "GET",
+    "path": "/api/characters/{character_id}/scsp-avatar",
+    "file": "backend/src/eidolon/app.py",
+    "line": 512,
+    "handler": "character_scsp_avatar"
+  },
+  {
+    "method": "GET",
+    "path": "/api/characters/{character_id}/background",
+    "file": "backend/src/eidolon/app.py",
+    "line": 520,
+    "handler": "character_background"
+  },
+  {
+    "method": "GET",
+    "path": "/api/characters/{character_id}/affinity",
+    "file": "backend/src/eidolon/app.py",
+    "line": 528,
+    "handler": "affinity"
+  },
+  {
+    "method": "GET",
+    "path": "/api/memories",
+    "file": "backend/src/eidolon/app.py",
+    "line": 537,
+    "handler": "list_memories"
+  },
+  {
+    "method": "DELETE",
+    "path": "/api/memories/{memory_id}",
+    "file": "backend/src/eidolon/app.py",
+    "line": 553,
+    "handler": "delete_memory"
+  },
+  {
+    "method": "DELETE",
+    "path": "/api/memories",
+    "file": "backend/src/eidolon/app.py",
+    "line": 558,
+    "handler": "clear_memories"
+  },
+  {
+    "method": "POST",
+    "path": "/api/conversations",
+    "file": "backend/src/eidolon/app.py",
+    "line": 562,
+    "handler": "create_conversation"
+  },
+  {
+    "method": "GET",
+    "path": "/api/conversations",
+    "file": "backend/src/eidolon/app.py",
+    "line": 568,
+    "handler": "list_conversations"
+  },
+  {
+    "method": "GET",
+    "path": "/api/conversations/latest",
+    "file": "backend/src/eidolon/app.py",
+    "line": 580,
+    "handler": "latest_conversations"
+  },
+  {
+    "method": "DELETE",
+    "path": "/api/conversations/{conversation_id}",
+    "file": "backend/src/eidolon/app.py",
+    "line": 596,
+    "handler": "delete_conversation"
+  },
+  {
+    "method": "GET",
+    "path": "/api/conversations/{conversation_id}/messages",
+    "file": "backend/src/eidolon/app.py",
+    "line": 606,
+    "handler": "list_messages"
+  },
+  {
+    "method": "POST",
+    "path": "/api/conversations/{conversation_id}/turns",
+    "file": "backend/src/eidolon/app.py",
+    "line": 613,
+    "handler": "text_turn"
+  },
+  {
+    "method": "GET",
+    "path": "/api/calendar/holidays",
+    "file": "backend/src/eidolon/calendar_api.py",
+    "line": 19,
+    "handler": "holidays"
+  },
+  {
+    "method": "GET",
+    "path": "/api/admin/dashboard",
+    "file": "backend/src/eidolon/dashboard.py",
+    "line": 87,
+    "handler": "dashboard"
+  },
+  {
+    "method": "GET",
+    "path": "/api/admin/calls/live",
+    "file": "backend/src/eidolon/dashboard.py",
+    "line": 141,
+    "handler": "live_calls"
+  },
+  {
+    "method": "GET",
+    "path": "/api/account/data-package/export-check",
+    "file": "backend/src/eidolon/data_package_api.py",
+    "line": 77,
+    "handler": "check_data_package_export"
+  },
+  {
+    "method": "GET",
+    "path": "/api/account/data-package",
+    "file": "backend/src/eidolon/data_package_api.py",
+    "line": 84,
+    "handler": "export_data_package"
+  },
+  {
+    "method": "POST",
+    "path": "/api/account/data-package",
+    "file": "backend/src/eidolon/data_package_api.py",
+    "line": 107,
+    "handler": "import_data_package"
+  },
+  {
+    "method": "GET",
+    "path": "/api/gifts/catalog",
+    "file": "backend/src/eidolon/gifts_api.py",
+    "line": 56,
+    "handler": "read_catalog"
+  },
+  {
+    "method": "GET",
+    "path": "/api/gifts",
+    "file": "backend/src/eidolon/gifts_api.py",
+    "line": 61,
+    "handler": "read_state"
+  },
+  {
+    "method": "POST",
+    "path": "/api/gifts/draws",
+    "file": "backend/src/eidolon/gifts_api.py",
+    "line": 74,
+    "handler": "draw"
+  },
+  {
+    "method": "POST",
+    "path": "/api/characters/{character_id}/gifts",
+    "file": "backend/src/eidolon/gifts_api.py",
+    "line": 84,
+    "handler": "give"
+  },
+  {
+    "method": "GET",
+    "path": "/api/characters/{character_id}/achievements",
+    "file": "backend/src/eidolon/gifts_api.py",
+    "line": 96,
+    "handler": "read_hers"
+  },
+  {
+    "method": "POST",
+    "path": "/api/gifts/resets",
+    "file": "backend/src/eidolon/gifts_api.py",
+    "line": 105,
+    "handler": "use_reset_card"
+  },
+  {
+    "method": "GET",
+    "path": "/api/admin/gifts",
+    "file": "backend/src/eidolon/gifts_api.py",
+    "line": 110,
+    "handler": "read_admin_gifts"
+  },
+  {
+    "method": "POST",
+    "path": "/api/admin/gifts/reset-card-grants",
+    "file": "backend/src/eidolon/gifts_api.py",
+    "line": 122,
+    "handler": "grant_reset_cards"
+  },
+  {
+    "method": "GET",
+    "path": "/api/photos/{photo_id}",
+    "file": "backend/src/eidolon/photos_api.py",
+    "line": 21,
+    "handler": "read_photo"
+  },
+  {
+    "method": "GET",
+    "path": "/api/photos/{photo_id}/image",
+    "file": "backend/src/eidolon/photos_api.py",
+    "line": 30,
+    "handler": "read_photo_image"
+  },
+  {
+    "method": "GET",
+    "path": "/api/service-status",
+    "file": "backend/src/eidolon/service_status.py",
+    "line": 257,
+    "handler": "service_status"
+  },
+  {
+    "method": "GET",
+    "path": "/api/admin/sponsor",
+    "file": "backend/src/eidolon/sponsor_api.py",
+    "line": 46,
+    "handler": "state"
+  },
+  {
+    "method": "PUT",
+    "path": "/api/admin/sponsor",
+    "file": "backend/src/eidolon/sponsor_api.py",
+    "line": 50,
+    "handler": "switch"
+  },
+  {
+    "method": "PUT",
+    "path": "/api/admin/sponsor/image",
+    "file": "backend/src/eidolon/sponsor_api.py",
+    "line": 55,
+    "handler": "upload"
+  },
+  {
+    "method": "DELETE",
+    "path": "/api/admin/sponsor",
+    "file": "backend/src/eidolon/sponsor_api.py",
+    "line": 69,
+    "handler": "clear"
+  },
+  {
+    "method": "GET",
+    "path": "/api/admin/sponsor/image",
+    "file": "backend/src/eidolon/sponsor_api.py",
+    "line": 74,
+    "handler": "admin_code"
+  },
+  {
+    "method": "GET",
+    "path": "/api/sponsor/image",
+    "file": "backend/src/eidolon/sponsor_api.py",
+    "line": 79,
+    "handler": "user_code"
+  },
+  {
+    "method": "GET",
+    "path": "/api/stats",
+    "file": "backend/src/eidolon/stats.py",
+    "line": 64,
+    "handler": "stats"
+  }
+]

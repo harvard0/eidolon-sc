@@ -1,0 +1,18 @@
+{
+  "status": "passed",
+  "checked_at_utc": "2026-10-24T10:56:46.247675+00:00",
+  "source_commit": "3602e8d72cf95437605d9fc3cf127ea429e554e5",
+  "notes": 36,
+  "modules": 13,
+  "exercise_files": 13,
+  "exercises": 65,
+  "folded_answers": 65,
+  "wiki_links": 474,
+  "registered_tags": 36,
+  "source_files": 108,
+  "referenced_test_files": 61,
+  "api_routes": 94,
+  "errors": [],
+  "warnings": [],
+  "scope": "Structural and source-reference validation only; application tests and rendered Obsidian view not run."
+}
